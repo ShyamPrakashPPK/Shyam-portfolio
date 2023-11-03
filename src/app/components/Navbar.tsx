@@ -32,7 +32,7 @@ const Navbar = () => {
                     className="text-2xl md:text-5xl text-white font-semibold"
                 >
                     <Image
-                        src="/images/newlogo_preview_rev_1.PNG"
+                        src="/images/newlogo_preview_rev_1.png"
                         alt="logo"
                         className="w-max"
                         width={300}

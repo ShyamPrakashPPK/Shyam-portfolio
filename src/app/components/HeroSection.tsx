@@ -4,6 +4,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import TechCard from './cards/techStacks';
 
 const HeroSection = () => {
     return (
@@ -70,6 +71,66 @@ const HeroSection = () => {
                                 Download CV
                             </span>
                         </Link>
+                    </div>
+                </motion.div>
+                
+            </div>
+
+       
+
+            <div className="col-span-2 p-6 md:col-span-2 lg:col-span-3 pt-10">
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5 }}
+                    className="col-span-4 place-self-center mt-4 lg:mt-0"
+                >
+                <div className="text-6xl text-center p-10 font-extrabold mt-2 text-transparent bg-clip-text bg-gradient-to-l from-primary-400 to-secondary-600">
+                    What I know
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+                    <TechCard
+                        title="Frontend"
+                        classaName="bg-[#4f91f2]"
+                        tech={[
+                            'HTML',
+                            'CSS',
+                            'Tailwind',
+                            'Javascript',
+                            'Typescript',
+                            'React Js',
+                            'Next Js',
+                            'Angular'
+                        ]}
+                    />
+                    <TechCard
+                        title="Backend"
+                        classaName="bg-[#f37c36] "
+                        tech={[
+                            'Node Js',
+                            'Express Js',
+                            'Next Auth']}
+                    />
+                    <TechCard
+                        title="Database"
+                        classaName="bg-[#e0558a]"
+                        tech={[
+                            'MySql',
+                            'MongoDB',
+                            'PostgreSQL',
+                        ]}
+                    />
+                    <TechCard
+                        title="Devops"
+                        classaName="bg-[#10c0a2]"
+                        tech={[
+                            'Docker',
+                            'Kubernetes',
+                            'GIT',
+                            'AWS',
+                        ]}
+                    />
                     </div>
                 </motion.div>
                 
