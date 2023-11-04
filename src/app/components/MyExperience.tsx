@@ -30,11 +30,25 @@ const Experience = [
 
 const MyExperience = () => {
     return (
-        <section>
+        <section className='relative isolate '>
+            <div
+                className="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
+                aria-hidden="true"
+            >
+                <div
+                    className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#ff8080] to-[#e54656] opacity-20"
+                    style={{
+                        clipPath:
+                            'polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
+                    }}
+                />
+            </div>
             <div className='flex flex-col items-center gap-10'>
+         
+            
                 <h1 className="mt-20 text-6xl text-center p-10 font-extrabold  text-transparent bg-clip-text bg-gradient-to-l from-primary-400 to-secondary-600">My Work Experience</h1>
                 {Experience.map(exp => (
-                    <div key={exp.key} className='bg-[#181818] w-96 rounded-lg p-10'>
+                    <div key={exp.key} className='bg-[#181818] w-3/4 md:w-3/5 lg:w-2/6 rounded-lg p-10'>
                         <h1 className='p-3 text-2xl font-extrabold'>{exp.position}</h1>
                         <h3 className='px-3 text-xl font-bold'>{exp.company}</h3>
                         <h3 className='px-3 text-lg font-semibold'>{exp.location}</h3>
@@ -42,7 +56,21 @@ const MyExperience = () => {
                         <h3 className='p-3 '>{exp.description}</h3>
                     </div>
                 ))}
+
             </div>
+            <div
+                className="absolute right-[calc(50%-4rem)] bottom-10 -z-10 transform-gpu blur-3xl sm:right-[calc(50%-18rem)] lg:right-48 lg:bottom-[calc(50%-30rem)] xl:right-[calc(50%-24rem)]"
+                aria-hidden="true"
+            >
+                <div
+                    className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-l from-primary-400 to-secondary-600 opacity-10"
+                    style={{
+                        clipPath:
+                            'polygon(73.6% 1.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
+                    }}
+                />
+            </div>
+   
         </section>
     )
 }

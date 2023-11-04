@@ -31,13 +31,16 @@ const Navbar = () => {
                     href={"/"}
                     className="text-2xl md:text-5xl text-white font-semibold"
                 >
-                    <Image
-                        src="/images/newlogo_preview_rev_1.png"
-                        alt="logo"
-                        className="w-max"
-                        width={300}
-                        height={300}
-                    />
+                    <div className="w-1/2">
+                        <Image
+                            src="/images/newlogo_preview_rev_1.png"
+                            alt="logo"
+                            className="w-20 md:w-max"
+                            width={300}
+                            height={300}
+                        />
+                    </div>
+
                 </Link>
                 <div className="mobile-menu block md:hidden">
                     {!navbarOpen ? (

@@ -58,17 +58,18 @@ const HeroSection = () => {
                     </p>
                     <div>
                         <Link
-                            href="/contact"
+                            href="/#contact"
                             className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
                         >
                             Hire Me
                         </Link>
                         <Link
-                            href="/"
+                            download={'/pdf/ShyamPrakashResume.pdf'}
+                            href="/pdf/ShyamPrakashResume.pdf"
                             className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
                         >
                             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                                Download CV
+                                View CV
                             </span>
                         </Link>
                     </div>
@@ -85,7 +86,7 @@ const HeroSection = () => {
                     transition={{ duration: 0.5 }}
                     className="col-span-4 place-self-center mt-4 lg:mt-0"
                 >
-                <div className="text-6xl text-center p-10 font-extrabold mt-2 text-transparent bg-clip-text bg-gradient-to-l from-primary-400 to-secondary-600">
+                <div className=" text-4xl md:text-6xl text-center p-10 font-extrabold mt-2 text-transparent bg-clip-text bg-gradient-to-l from-primary-400 to-secondary-600">
                     What I know
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
