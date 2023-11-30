@@ -69,7 +69,7 @@ const HeroSection = () => {
                             className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
                         >
                             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                                View CV
+                                View Resume
                             </span>
                         </Link>
                     </div>
@@ -79,7 +79,7 @@ const HeroSection = () => {
 
        
 
-            <div className="col-span-2 p-6 md:col-span-2 lg:col-span-3 pt-10">
+            <div className="col-span-2 p-6 md:col-span-2 lg:col-span-3 pt-10 md:py-20">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
