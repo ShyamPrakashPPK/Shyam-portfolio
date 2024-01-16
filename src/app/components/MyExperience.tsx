@@ -46,9 +46,9 @@ const MyExperience = () => {
             <div className='flex flex-col items-center gap-10'>
          
             
-                <h1 className="mt-20 text-6xl text-center p-10 font-extrabold  text-transparent bg-clip-text bg-gradient-to-l from-primary-400 to-secondary-600">My Work Experience</h1>
+                <h1 className=" mt-20 text-6xl text-center p-10 font-extrabold  text-transparent bg-clip-text bg-gradient-to-l from-primary-400 to-secondary-600">My Work Experience</h1>
                 {Experience.map(exp => (
-                    <div key={exp.key} className='bg-[#181818] w-3/4 md:w-3/5 lg:w-2/6 rounded-lg p-10'>
+                    <div key={exp.key} className='bg-[#181818] w-3/4 md:w-3/5 lg:w-2/6 rounded-lg p-10 transition ease-in delay-250 hover:-translate-y-2 hover:scale-110'>
                         <h1 className='p-3 text-2xl font-extrabold'>{exp.position}</h1>
                         <h3 className='px-3 text-xl font-bold'>{exp.company}</h3>
                         <h3 className='px-3 text-lg font-semibold'>{exp.location}</h3>

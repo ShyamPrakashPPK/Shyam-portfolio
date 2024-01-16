@@ -18,7 +18,7 @@ const ProjectsCard: FC<ProjectsCardProps> = ({
 }) => {
     return (
         <Link target="_blank" href={href || '/'}>
-            <div className="flex flex-col overflow-hidden gap-3 bg-[#181818] text-primary rounded-lg overflow-ellipsis">
+            <div className="flex flex-col overflow-hidden gap-3 bg-[#181818] text-primary rounded-lg overflow-ellipsis transition ease-in delay-250 hover:-translate-y-2 hover:scale-110">
                 <Image
                     src={`/${src}`}
                     alt="spotify"

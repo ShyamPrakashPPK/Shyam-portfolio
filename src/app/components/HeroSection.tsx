@@ -59,14 +59,14 @@ const HeroSection = () => {
                     <div>
                         <Link
                             href="/#contact"
-                            className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
+                            className="transition ease-in delay-250 hover:-translate-y-2 hover:scale-110 px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
                         >
                             Hire Me
                         </Link>
                         <Link
                             download={'/pdf/ShyamPrakashResume.pdf'}
                             href="/pdf/ShyamPrakashResume.pdf"
-                            className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+                            className="transition ease-in delay-250 hover:-translate-y-2 hover:scale-110 px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
                         >
                             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                                 View Resume
@@ -79,7 +79,7 @@ const HeroSection = () => {
 
        
 
-            <div className="col-span-2 p-6 md:col-span-2 lg:col-span-3 pt-10 md:py-20">
+            <div className="col-span-2 p-6 md:col-span-2 lg:col-span-3 pt-10 md:py-20 ">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
@@ -93,7 +93,7 @@ const HeroSection = () => {
 
                     <TechCard
                         title="Frontend"
-                        classaName="bg-[#4f91f2]"
+                        classaName=" bg-[#4f91f2]"
                         tech={[
                             'HTML',
                             'CSS',

@@ -9,7 +9,7 @@ interface TechCardProps {
 
 const TechCard: FC<TechCardProps> = ({ title, classaName, tech }) => {
     return (
-        <div className="flex-1 flex flex-col gap-4 bg-[#181818] p-4 rounded-xl shadow-lg">
+        <div className="flex-1 flex flex-col gap-4 bg-[#181818] p-4 rounded-xl shadow-lg transition ease-in delay-250 hover:-translate-y-2 hover:scale-110">
             <div className="text-primary font-bold text-2xl tracking-wider ">
                 {title}
             </div>
@@ -18,7 +18,7 @@ const TechCard: FC<TechCardProps> = ({ title, classaName, tech }) => {
                     <div
                         key={i}
                         className={cn(
-                            'rounded-md bg-body text-lg text-primary p-2',
+                            'rounded-md bg-body text-lg text-primary p-2 transition ease-in delay-250 hover:-translate-y-2 hover:scale-110',
                             item === 'HTML' && 'border border-amber-700',
                             item === 'CSS' && 'border border-blue-700',
                             item === 'Tailwind' && 'border border-blue-500/60',

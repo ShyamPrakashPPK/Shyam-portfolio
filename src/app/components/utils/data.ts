@@ -25,20 +25,21 @@ export const projectCard: IProjectSectionCardData[] = [
         href: 'https://github.com/ShyamPrakashPPK/StudyGroup-FrontEnd',
     },
     {
-        id: 3,
-        title: 'Task manager',
-        techStack:
-            'NodeJs, Express, Mongoose, Angular,, HTML, CSS',
-        imageUrl: 'images/taskmanager.png',
-        href: 'https://github.com/ShyamPrakashPPK/Task_Manager',
+        id: 5,
+        title: 'Photo Storage App',
+        techStack: 'Next js, React, Tailwind css, Supabase',
+        imageUrl: 'images/photoapp.png',
+        href: 'https://photo-store-nextjs-supabase-x6vj.vercel.app/',
     },
     {
-        id: 4,
-        title: 'Netflix clone',
-        techStack: 'Angular, Html, Css, ',
-        imageUrl: 'images/netflixclone.jpg',
-        href: 'https://github.com/ShyamPrakashPPK/Netflix-Clone-Angular',
+        id: 6,
+        title: 'EnteNews News App',
+        techStack: 'Next js, React, Tailwind css, Hacker News API',
+        imageUrl: 'images/entenews.png',
+        href: 'https://ente-news.vercel.app/',
     },
+ 
+
 ];
 
 
