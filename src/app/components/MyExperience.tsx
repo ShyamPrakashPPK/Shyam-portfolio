@@ -4,14 +4,22 @@ import React from 'react'
 const Experience = [
     {
         key: 1,
-        position: 'Full stack developer',
-        company: 'Quazma Techno Solutions',
-        location: 'Indore, MP ',
-        duration: 'July 2023 - Present',
+        position: 'Frontend developer',
+        company: 'TogetherED Corporation',
+        location: 'Washington, USA',
+        duration: 'January 2024 - Present',
         description: `Working remotely on various full stack projects`,
     },
     {
         key: 2,
+        position: 'Full stack developer',
+        company: 'Quazma Techno Solutions',
+        location: 'Indore, MP ',
+        duration: 'July 2023 - December 2023',
+        description: `Working remotely on various full stack projects`,
+    },
+    {
+        key: 3,
         position: 'MEAN Stack developer Intern',
         company: 'Brototype',
         location: 'Kochi, Kerala ',
@@ -19,7 +27,7 @@ const Experience = [
         description: `Worked using Angular, Node js, Express js, Mongo DB`,
     },
     {
-        key: 3,
+        key: 4,
         position: 'Freelance Developer',
         company: '',
         location: '',
