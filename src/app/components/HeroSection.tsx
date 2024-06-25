@@ -9,7 +9,7 @@ import TechCard from './cards/techStacks';
 const HeroSection = () => {
     return (
         <section className="lg:py-16 pt-10">
-            <div className="grid grid-cols-1 sm:grid-cols-12">
+            <div className="grid grid-cols-1 lg:flex">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
@@ -54,7 +54,8 @@ const HeroSection = () => {
                         />
                     </h1>
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                        Dedicated and passionate Full Stack Developer with a strong foundation in computer science. For the past few months, I have been working as a remote Full Stack Developer for Quazma Techno Solutions, where I have consistently demonstrated a sincere commitment to delivering high-quality work and innovative solutions.
+                        Dedicated and passionate Full Stack Developer with a strong foundation in computer science. <br />
+                        Well versed in frontend technologies like, React, Next js and Redux.
                     </p>
                     <div>
                         <Link

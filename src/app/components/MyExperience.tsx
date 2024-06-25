@@ -51,7 +51,7 @@ const MyExperience = () => {
                     }}
                 />
             </div>
-            <div className='flex flex-col items-center gap-10'>
+            <div className='flex flex-col items-center gap-10 '>
          
             
                 <h1 className=" mt-20 text-6xl text-center p-10 font-extrabold  text-transparent bg-clip-text bg-gradient-to-l from-primary-400 to-secondary-600">My Work Experience</h1>

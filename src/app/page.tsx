@@ -5,7 +5,7 @@ import MyExperience from './components/MyExperience'
 import EmailSection from './components/EmailSection'
 import ProjectCardSection from './components/ProjectCardSection'
 
-import { projectCard } from './components/utils/data'
+import { projectCard , websitecards} from './components/utils/data'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar/>
       <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
-        <ProjectCardSection title="Projects" data={projectCard} />
+        <ProjectCardSection title="Projects" data={projectCard} websitedata={websitecards}/>
         <MyExperience />
         <EmailSection/>
         </div>
