@@ -1,86 +1,100 @@
-import React from 'react'
+"use client";
 
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const Experience = [
     {
         key: 1,
-        position: 'Frontend developer',
-        company: 'TogetherED Corporation',
-        location: 'Washington, USA',
-        duration: 'January 2024 - Present',
-        description: `Working remotely on various full stack projects`,
+        position: 'Full-stack Developer',
+        company: 'Webcastle Media',
+        location: 'Kochi, Kerala',
+        duration: 'July 2024 – Present',
+        description: `Working on our ecommerce service product used by over 10 clients with 2000+ vendors, 9000+ products, and 100k+ users. Technologies: React, Next.js, Angular, Redux, Node.js, Express.js, MongoDB.`,
     },
     {
         key: 2,
-        position: 'Full stack developer',
-        company: 'Quazma Techno Solutions',
-        location: 'Indore, MP ',
-        duration: 'July 2023 - December 2023',
-        description: `Working remotely on various full stack projects`,
+        position: 'Frontend Developer',
+        company: 'TogetherEd',
+        location: 'Washington DC, USA (Remote)',
+        duration: 'February 2024 – July 2024',
+        description: `Worked on Growday, a SaaS platform. Contributed to React and Next.js projects using Tailwind CSS, Node.js, APIs, and Vercel.`,
     },
     {
         key: 3,
-        position: 'MEAN Stack developer Intern',
-        company: 'Brototype',
-        location: 'Kochi, Kerala ',
-        duration: 'Angust 2022 - July 2023',
-        description: `Worked using Angular, Node js, Express js, Mongo DB`,
+        position: 'Full Stack Developer',
+        company: 'Quazma Techno Solutions',
+        location: 'Indore, MP, India (Remote)',
+        duration: 'July 2023 – January 2024',
+        description: `Built modular SPAs with Angular and React. Ensured responsive UI and integrated Vercel deployment. Stack included Angular, Next.js, Tailwind CSS, Node.js.`,
     },
     {
         key: 4,
-        position: 'Freelance Developer',
-        company: '',
-        location: '',
-        duration: 'November 2021 - August 2022',
-        description: `Working remotely on various projects using HTML, CSS and Javascript`,
+        position: 'Full Stack Developer Intern',
+        company: 'Brototype',
+        location: 'Kochi, Kerala',
+        duration: 'August 2022 – July 2023',
+        description: `Developed Angular-based SPAs using the MEAN stack. Took ownership of projects and applied responsive design principles.`,
     }
-]
+];
 
 const MyExperience = () => {
     return (
-        <section className='relative isolate '>
-            <div
-                className="hidden md:flex absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
-                aria-hidden="true"
-            >
-                <div
-                    className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#ff8080] to-[#e54656] opacity-20"
+        <section className='relative isolate py-24'>
+            <div className="hidden md:flex absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
+                aria-hidden="true">
+                <div className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#ff8080] to-[#e54656] opacity-20"
                     style={{
                         clipPath:
                             'polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
-                    }}
-                />
+                    }} />
             </div>
-            <div className='flex flex-col items-center gap-10 '>
-         
-            
-                <h1 className=" mt-20 text-6xl text-center p-10 font-extrabold  text-transparent bg-clip-text bg-gradient-to-l from-primary-400 to-secondary-600">My Work Experience</h1>
-                {Experience.map(exp => (
-                    <div key={exp.key} className='bg-[#181818] w-3/4 md:w-3/5 lg:w-2/6 rounded-lg p-10 transition ease-in delay-250 hover:-translate-y-2 hover:scale-110'>
-                        <h1 className='p-3 text-2xl font-extrabold'>{exp.position}</h1>
-                        <h3 className='px-3 text-xl font-bold'>{exp.company}</h3>
-                        <h3 className='px-3 text-lg font-semibold'>{exp.location}</h3>
-                        <h3 className='px-3 text-lg font-semibold'>{exp.duration}</h3>
-                        <h3 className='p-3 '>{exp.description}</h3>
-                    </div>
-                ))}
-
+            <div className='flex flex-col items-center gap-10'>
+                <h1 className="text-6xl text-center p-10 font-extrabold text-transparent bg-clip-text bg-gradient-to-l from-primary-400 to-secondary-600">
+                    My Work Experience
+                </h1>
+                <div className="relative w-full max-w-4xl">
+                    {/* Timeline line */}
+                    <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary-400 to-secondary-600"></div>
+                    
+                    {Experience.map((exp, index) => (
+                        <motion.div
+                            key={exp.key}
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: index * 0.2 }}
+                            viewport={{ once: true }}
+                            className={`relative mb-8 flex items-center ${
+                                index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
+                            }`}
+                        >
+                            {/* Timeline dot */}
+                            <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-primary-400 to-secondary-600"></div>
+                            
+                            {/* Content */}
+                            <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8'}`}>
+                                <div className="bg-white dark:bg-[#181818] p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
+                                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{exp.position}</h3>
+                                    <h4 className="text-lg font-semibold text-primary-400 mb-1">{exp.company}</h4>
+                                    <p className="text-gray-600 dark:text-gray-300 mb-2">{exp.location}</p>
+                                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">{exp.duration}</p>
+                                    <p className="text-gray-700 dark:text-gray-300">{exp.description}</p>
+                                </div>
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
             </div>
-            <div
-                className="hidden md:flex absolute right-[calc(50%-4rem)] bottom-10 -z-10 transform-gpu blur-3xl sm:right-[calc(50%-18rem)] lg:right-48 lg:bottom-[calc(50%-30rem)] xl:right-[calc(50%-24rem)]"
-                aria-hidden="true"
-            >
-                <div
-                    className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-l from-primary-400 to-secondary-600 opacity-10"
+            <div className="hidden md:flex absolute right-[calc(50%-4rem)] bottom-10 -z-10 transform-gpu blur-3xl sm:right-[calc(50%-18rem)] lg:right-48 lg:bottom-[calc(50%-30rem)] xl:right-[calc(50%-24rem)]"
+                aria-hidden="true">
+                <div className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-l from-primary-400 to-secondary-600 opacity-10"
                     style={{
                         clipPath:
                             'polygon(73.6% 1.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
-                    }}
-                />
+                    }} />
             </div>
-   
         </section>
-    )
-}
+    );
+};
 
-export default MyExperience
+export default MyExperience;

@@ -1,45 +1,48 @@
+"use client";
+
 import { FC } from 'react';
-import { cn } from '../utils/utils';
+import Image from 'next/image';
 
 interface TechCardProps {
     title: string;
-    classaName: string;
-    tech: string[];
+    tech: {
+        name: string;
+        logo: string;
+    }[];
 }
 
-const TechCard: FC<TechCardProps> = ({ title, classaName, tech }) => {
+const TechCard: FC<TechCardProps> = ({ title, tech }) => {
     return (
-        <div className="flex-1 flex flex-col gap-4 bg-[#181818] p-4 rounded-xl shadow-lg transition ease-in delay-250 hover:-translate-y-2 hover:scale-110">
-            <div className="text-primary font-bold text-2xl tracking-wider ">
+        <div className="flex-1 flex flex-col gap-6 bg-gray-200 p-6 md:p-8 rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-2">
+            <div className="text-primary font-bold text-2xl tracking-wider">
                 {title}
             </div>
-            <div className="flex flex-wrap gap-2 ">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {tech.map((item, i) => (
                     <div
                         key={i}
-                        className={cn(
-                            'rounded-md bg-body text-lg text-primary p-2 transition ease-in delay-250 hover:-translate-y-2 hover:scale-110',
-                            item === 'HTML' && 'border border-amber-700',
-                            item === 'CSS' && 'border border-blue-700',
-                            item === 'Tailwind' && 'border border-blue-500/60',
-                            item === 'Javascript' && 'border border-yellow-500/60',
-                            item === 'Typescript' && 'border border-blue-500/60',
-                            item === 'React Js' && 'border border-blue-500/60',
-                            item === 'Next Js' && 'border border-white',
-                            item === 'Angular' && 'border border-rose-800/60',
-                            item === 'Node Js' && 'border border-green-500/60',
-                            item === 'Express Js' && 'border border-gray-500/60',
-                            item === 'Next Auth' && 'border border-white',
-                            item === 'MySql' && 'border border-blue-500/60',
-                            item === 'MongoDB' && 'border border-emerald-500/60',
-                            item === 'PostgreSQL' && 'border border-blue-500/60',
-                            item === 'Docker' && 'border border-blue-500/60',
-                            item === 'Kubernetes' && 'border border-blue-500/60',
-                            item === 'GIT' && 'border border-orange-500/60',
-                            item === 'AWS' && 'border border-yellow-500/60'
-                        )}
+                        className="flex flex-col items-center gap-2 p-3 rounded-lg bg-gray-300 transition-all duration-300 hover:shadow-md"
                     >
-                        {item}
+                        <div className="relative w-10 h-10 flex items-center justify-center">
+                            {item.logo.startsWith('data:image') ? (
+                                // Handle inline SVG data
+                                <img
+                                    src={item.logo}
+                                    alt={item.name}
+                                    className="w-10 h-10"
+                                />
+                            ) : (
+                                <Image
+                                    src={item.logo}
+                                    alt={item.name}
+                                    fill
+                                    className="object-contain"
+                                />
+                            )}
+                        </div>
+                        <span className="text-sm font-medium text-gray-700">
+                            {item.name}
+                        </span>
                     </div>
                 ))}
             </div>

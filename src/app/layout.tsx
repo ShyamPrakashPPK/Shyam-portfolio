@@ -1,15 +1,15 @@
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
+import { ThemeProvider } from './components/ThemeProvider'
 
-const inter = Poppins({
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['100','200','300','500','700']
 })
 
 export const metadata: Metadata = {
-  title: 'Shyam Prakash',
-  description: 'Portfolio',
+  title: 'Shyam Prakash - Portfolio',
+  description: 'Full Stack Developer Portfolio',
 }
 
 export default function RootLayout({
@@ -18,8 +18,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }

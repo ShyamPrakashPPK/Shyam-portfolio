@@ -4,19 +4,18 @@ import Navbar from './components/Navbar'
 import MyExperience from './components/MyExperience'
 import EmailSection from './components/EmailSection'
 import ProjectCardSection from './components/ProjectCardSection'
-
-import { projectCard , websitecards} from './components/utils/data'
+import { projectCard} from './components/utils/data'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212]">
+    <main className="flex min-h-screen flex-col bg-white ">
       <Navbar/>
       <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
-        <ProjectCardSection title="Projects" data={projectCard} websitedata={websitecards}/>
+        <ProjectCardSection title="Projects" data={projectCard} />
         <MyExperience />
         <EmailSection/>
-        </div>
+      </div>
     </main>
   )
 }
