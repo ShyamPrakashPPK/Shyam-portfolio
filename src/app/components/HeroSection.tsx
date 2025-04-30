@@ -34,26 +34,28 @@ const HeroSection = () => {
                     transition={{ duration: 0.5 }}
                     className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
                 >
-                    <h1 className="text-gray-900 dark:text-gray-700 mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
+                    <h1 className="text-gray-900 dark:text-gray-700 mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
                             Hello, I&apos;m{" "}
                         </span>
                         <br></br>
-                        <TypeAnimation
-                            sequence={[
-                                "Shyam Prakash",
-                                1000,
-                                "FullStack Developer",
-                                1000,
-                                "Frontend Developer",
-                                1000,
-                                "Backend Developer",
-                                1000,
-                            ]}
-                            wrapper="span"
-                            speed={50}
-                            repeat={Infinity}
-                        />
+                        <span className="whitespace-nowrap inline-block">
+                            <TypeAnimation
+                                sequence={[
+                                    "Shyam Prakash",
+                                    1000,
+                                    "FullStack Developer",
+                                    1000,
+                                    "Frontend Developer",
+                                    1000,
+                                    "Backend Developer",
+                                    1000,
+                                ]}
+                                wrapper="span"
+                                speed={50}
+                                repeat={Infinity}
+                            />
+                        </span>
                     </h1>
                     <p className="text-gray-600  text-base sm:text-lg mb-6 lg:text-xl">
                         Dedicated and passionate Full Stack Developer with a strong foundation in computer science. <br />
