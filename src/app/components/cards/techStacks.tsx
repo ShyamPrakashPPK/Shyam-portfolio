@@ -14,7 +14,7 @@ interface TechCardProps {
 const TechCard: FC<TechCardProps> = ({ title, tech }) => {
     return (
         <div className="flex-1 flex flex-col gap-6 bg-gray-200 p-6 md:p-8 rounded-xl shadow-lg transition-all duration-300 hover:-translate-y-2">
-            <div className="text-primary font-bold text-2xl tracking-wider">
+            <div className="text-primary text-gray-900  font-bold text-2xl tracking-wider">
                 {title}
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">

@@ -53,7 +53,7 @@ const HeroSection = () => {
                             repeat={Infinity}
                         />
                     </h1>
-                    <p className="text-gray-600 dark:text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+                    <p className="text-gray-600  text-base sm:text-lg mb-6 lg:text-xl">
                         Dedicated and passionate Full Stack Developer with a strong foundation in computer science. <br />
                         Well versed in frontend technologies like, React, Next js and Redux.
                     </p>
@@ -69,14 +69,14 @@ const HeroSection = () => {
                             href="/pdf/ShyamPrakashResume.pdf"
                             className="transition ease-in delay-250 hover:-translate-y-2 hover:scale-110 px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
                         >
-                            <span className="block bg-white text-black hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full px-5 py-2">
+                            <span className="block bg-white text-black hover:bg-slate-100 dark:hover:bg-blue-200 rounded-full px-5 py-2">
                                 View Resume
                             </span>
                         </Link>
                     </div>
                 </motion.div>
             </div>
-            <div className="grid grid-cols-1 lg:flex">
+            <div className="grid grid-cols-1 lg:flex mt-[20vh]">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}

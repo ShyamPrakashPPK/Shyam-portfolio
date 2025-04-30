@@ -15,13 +15,13 @@ const EmailSection = () => {
         <h5 className="mt-20 text-6xl   font-extrabold  text-transparent bg-clip-text bg-gradient-to-l from-primary-400 to-secondary-600">
           Let&apos;s Connect
         </h5>
-        <p className="text-gray-600 dark:text-[#ADB7BE] text-2xl font-extralight mb-4  pt-10">
+        <p className="text-gray-600  text-2xl font-extralight mb-4  pt-10">
        
           I&apos;m currently looking for new opportunities, my inbox is always
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="socials flex flex-row gap-2 mt-10">
+        <div className="socials flex flex-row gap-2 mt-10 invert">
           <Link href="https://github.com/ShyamPrakashPPK">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>

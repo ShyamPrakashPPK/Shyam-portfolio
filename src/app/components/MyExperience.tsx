@@ -43,7 +43,7 @@ const MyExperience = () => {
         <section className='relative isolate py-24'>
             <div className="hidden md:flex absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
                 aria-hidden="true">
-                <div className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#ff8080] to-[#e54656] opacity-20"
+                <div className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-primary-400 to-secondary-600 opacity-20"
                     style={{
                         clipPath:
                             'polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
@@ -73,12 +73,12 @@ const MyExperience = () => {
                             
                             {/* Content */}
                             <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8'}`}>
-                                <div className="bg-white dark:bg-[#181818] p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
-                                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{exp.position}</h3>
+                                <div className="bg-gray-300 p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
+                                    <h3 className="text-xl font-bold text-gray-900  mb-2">{exp.position}</h3>
                                     <h4 className="text-lg font-semibold text-primary-400 mb-1">{exp.company}</h4>
-                                    <p className="text-gray-600 dark:text-gray-300 mb-2">{exp.location}</p>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">{exp.duration}</p>
-                                    <p className="text-gray-700 dark:text-gray-300">{exp.description}</p>
+                                    <p className="text-gray-600 mb-2">{exp.location}</p>
+                                    <p className="text-sm text-gray-500  mb-3">{exp.duration}</p>
+                                    <p className="text-gray-700 text-sm">{exp.description}</p>
                                 </div>
                             </div>
                         </motion.div>
