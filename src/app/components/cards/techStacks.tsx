@@ -17,7 +17,7 @@ const TechCard: FC<TechCardProps> = ({ title, tech }) => {
             <div className="text-primary text-gray-900  font-bold text-2xl tracking-wider">
                 {title}
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-4">
                 {tech.map((item, i) => (
                     <div
                         key={i}

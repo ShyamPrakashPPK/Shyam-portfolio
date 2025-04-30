@@ -30,8 +30,8 @@ const ProjectsCard: FC<ProjectsCardProps> = ({
                 <div className="absolute top-4 left-4 z-10">
                     <span className={`px-3 py-1 rounded-full text-xs font-medium ${
                         type === 'personal' 
-                            ? 'bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400'
-                            : 'bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400'
+                            ? 'bg-blue-100 text-blue-600  dark:text-blue-400'
+                            : 'bg-purple-100 text-purple-600  dark:text-purple-400'
                     }`}>
                         {type === 'personal' ? 'Personal Project' : 'Client Project'}
                     </span>

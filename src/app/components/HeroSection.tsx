@@ -8,21 +8,23 @@ import TechCard from './cards/techStacks';
 
 const HeroSection = () => {
     return (
-        <section className="lg:py-16 pt-10 pb-52">
-            <div className="grid grid-cols-1 gap-10 lg:flex">
+        <section >
+            <div className="lg:py-16 pt-10 pb-52">
+                 <div className="grid grid-cols-1 gap-10 lg:flex">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
-                    className="col-span-4 place-self-center mt-4 lg:mt-0"
+                    className="col-span-8 place-self-center text-center sm:text-left justify-self-center"
                 >
-                    <div className="rounded-full bg-gray-600 w-[150px] h-[150px] lg:w-[350px] lg:h-[350px] relative">
+                    <div className="rounded-full bg-gray-600 w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] relative">
                         <Image
                             src="/images/profile.png"
                             alt="hero image"
-                            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                            width={300}
-                            height={300}
+                            className="rounded-full object-cover"
+                            fill
+                            sizes="(max-width: 768px) 150px, 350px"
+                            priority
                         />
                     </div>
                 </motion.div>
@@ -76,7 +78,9 @@ const HeroSection = () => {
                     </div>
                 </motion.div>
             </div>
-            <div className="grid grid-cols-1 lg:flex mt-[20vh]">
+            </div>
+           
+            <div className="grid grid-cols-1 lg:flex  lg:mt-[20vh]">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
