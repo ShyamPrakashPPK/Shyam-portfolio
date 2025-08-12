@@ -40,25 +40,18 @@ const Experience = [
 
 const MyExperience = () => {
     return (
-        <section className='relative isolate py-24'>
-            <div className="hidden md:flex absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
-                aria-hidden="true">
-                <div className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-primary-400 to-secondary-600 opacity-20"
-                    style={{
-                        clipPath:
-                            'polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
-                    }} />
-            </div>
+        <section id="experience" className='relative isolate py-24 bg-black'>
+
             <div className='flex flex-col items-center gap-10'>
-                <h1 className="text-4xl md:text-6xl text-center p-6 md:p-10 font-extrabold text-transparent bg-clip-text bg-gradient-to-l from-primary-400 to-secondary-600">
+                <h1 className="text-4xl md:text-5xl text-center p-6 md:p-10 font-bold text-white">
                     My Work Experience
                 </h1>
                 <div className="relative w-full max-w-4xl px-4 md:px-0">
                     {/* Timeline line */}
-                    <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary-400 to-secondary-600"></div>
+                    <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-700"></div>
                     
                     {/* Mobile Timeline line */}
-                    <div className="md:hidden absolute left-4 h-full w-1 bg-gradient-to-b from-primary-400 to-secondary-600"></div>
+                    <div className="md:hidden absolute left-4 h-full w-1 bg-gray-700"></div>
                     
                     {Experience.map((exp, index) => (
                         <motion.div
@@ -72,10 +65,10 @@ const MyExperience = () => {
                             } flex-row`}
                         >
                             {/* Timeline dot - Desktop */}
-                            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-primary-400 to-secondary-600"></div>
+                            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-white"></div>
                             
                             {/* Timeline dot - Mobile */}
-                            <div className="md:hidden absolute left-4 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-r from-primary-400 to-secondary-600"></div>
+                            <div className="md:hidden absolute left-4 transform -translate-x-1/2 w-4 h-4 rounded-full bg-white"></div>
                             
                             {/* Content */}
                             <div className={`w-full md:w-1/2 ${
@@ -84,26 +77,19 @@ const MyExperience = () => {
                             } 
                             // Mobile styles
                             pl-8 md:pl-0`}>
-                                <div className="bg-gray-300 p-4 md:p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
-                                    <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">{exp.position}</h3>
-                                    <h4 className="text-base md:text-lg font-semibold text-primary-400 mb-1">{exp.company}</h4>
-                                    <p className="text-sm md:text-base text-gray-600 mb-2">{exp.location}</p>
-                                    <p className="text-xs md:text-sm text-gray-500 mb-3">{exp.duration}</p>
-                                    <p className="text-xs md:text-sm text-gray-700">{exp.description}</p>
+                                                <div className="card p-6 hover-lift">
+                                    <h3 className="text-xl font-bold text-white mb-2">{exp.position}</h3>
+                                    <h4 className="text-lg font-semibold text-gray-400 mb-1">{exp.company}</h4>
+                                    <p className="text-gray-300 mb-2">{exp.location}</p>
+                                    <p className="text-sm text-gray-400 mb-4">{exp.duration}</p>
+                                    <p className="text-gray-300 leading-relaxed">{exp.description}</p>
                                 </div>
                             </div>
                         </motion.div>
                     ))}
                 </div>
             </div>
-            <div className="hidden md:flex absolute right-[calc(50%-4rem)] bottom-10 -z-10 transform-gpu blur-3xl sm:right-[calc(50%-18rem)] lg:right-48 lg:bottom-[calc(50%-30rem)] xl:right-[calc(50%-24rem)]"
-                aria-hidden="true">
-                <div className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-l from-primary-400 to-secondary-600 opacity-10"
-                    style={{
-                        clipPath:
-                            'polygon(73.6% 1.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
-                    }} />
-            </div>
+
         </section>
     );
 };
