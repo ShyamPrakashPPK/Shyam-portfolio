@@ -12,9 +12,9 @@ interface MenuOverlayProps {
 
 const MenuOverlay: React.FC<MenuOverlayProps> = ({ links }) => {
     return (
-        <ul className="flex flex-col py-4 items-center bg-white border-t border-gray-200">
+        <ul className="flex flex-col py-4 items-center glass-light border-t border-gray-200">
             {links.map((link, index) => (
-                <li key={index} className="w-full text-center hover:bg-blue-50 transition-colors duration-200">
+                <li key={index} className="w-full text-center hover:bg-green-50 transition-colors duration-200">
                     <NavLink href={link.path} title={link.title} />
                 </li>
             ))}

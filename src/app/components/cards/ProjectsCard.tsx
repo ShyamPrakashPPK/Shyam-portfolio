@@ -23,15 +23,15 @@ const ProjectsCard: FC<ProjectsCardProps> = ({
     type
 }) => {
     return (
-        <div className="group relative bg-slate-200  rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-2">
+        <div className="group relative glass-light rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-2 hover-lift">
             {/* Preview Container */}
             <div className="relative w-full aspect-[16/9] overflow-hidden">
                 {/* Project Type Badge */}
                 <div className="absolute top-4 left-4 z-10">
                     <span className={`px-3 py-1 rounded-full text-xs font-medium ${
                         type === 'personal' 
-                            ? 'bg-blue-100 text-blue-600  dark:text-blue-400'
-                            : 'bg-purple-100 text-purple-600  dark:text-purple-400'
+                            ? 'bg-green-100 text-green-700 border border-green-300'
+                            : 'bg-emerald-100 text-emerald-700 border border-emerald-300'
                     }`}>
                         {type === 'personal' ? 'Personal Project' : 'Client Project'}
                     </span>
@@ -75,11 +75,11 @@ const ProjectsCard: FC<ProjectsCardProps> = ({
             {/* Content */}
             <div className="p-6 space-y-4">
                 <div>
-                    <h3 className="font-bold text-xl text-gray-900 dark:text-primary mb-2">
+                    <h3 className="font-bold text-xl text-gray-800 mb-2">
                         {title}
                     </h3>
                     {description && (
-                        <p className="text-gray-600  text-sm line-clamp-2">
+                        <p className="text-gray-600 text-sm line-clamp-2">
                             {description}
                         </p>
                     )}
@@ -90,7 +90,7 @@ const ProjectsCard: FC<ProjectsCardProps> = ({
                     {techStack.split(',').map((tech, index) => (
                         <span 
                             key={index}
-                            className="text-xs px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full font-medium"
+                            className="text-xs px-3 py-1.5 bg-green-50 text-gray-700 rounded-full font-medium border border-green-200"
                         >
                             {tech.trim()}
                         </span>
