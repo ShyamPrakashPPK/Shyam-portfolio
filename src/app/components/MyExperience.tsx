@@ -77,7 +77,7 @@ const MyExperience = () => {
                             } 
                             // Mobile styles
                             pl-8 md:pl-0`}>
-                                                <div className="card p-6 hover-lift">
+                                                <div className="card p-6 hover-lift hover:border-gray-50">
                                     <h3 className="text-xl font-bold text-white mb-2">{exp.position}</h3>
                                     <h4 className="text-lg font-semibold text-gray-400 mb-1">{exp.company}</h4>
                                     <p className="text-gray-300 mb-2">{exp.location}</p>

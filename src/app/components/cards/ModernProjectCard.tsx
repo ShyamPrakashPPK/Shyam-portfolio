@@ -20,7 +20,7 @@ interface ProjectCardProps {
 const ModernProjectCard = ({ title, description, imageUrl, techStack, href, githubLink, type, index = 0 }: ProjectCardProps) => {
     return (
         <motion.div
-            className="group relative w-full h-full overflow-hidden cursor-pointer bg-zinc-900 rounded-lg border border-zinc-800/50 shadow-2xl"
+            className="group relative w-full h-full overflow-hidden cursor-pointer "
             whileHover={{ y: -8, scale: 1.02 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
         >
@@ -47,7 +47,7 @@ const ModernProjectCard = ({ title, description, imageUrl, techStack, href, gith
                                 initial={{ y: -20, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
                                 transition={{ delay: techIndex * 0.1 }}
-                                className="px-2 py-1 bg-white/10 backdrop-blur-md text-white text-xs font-medium rounded-md border border-white/20"
+                                className="px-2 py-1 bg-white/10 backdrop-blur-md text-white text-xs font-medium rounded-md "
                             >
                                 {tech.trim()}
                             </motion.span>

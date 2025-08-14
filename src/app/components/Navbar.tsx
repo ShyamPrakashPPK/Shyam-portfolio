@@ -81,7 +81,7 @@ const Navbar = () => {
                                 href="#contact"
                                 className="px-6 py-2 bg-white hover:bg-gray-200 text-black rounded-full transition-colors duration-300 font-medium"
                             >
-                                Let's Talk
+                                Let&apos;s Talk
                             </Link>
                         </motion.div>
                     </div>
@@ -133,7 +133,7 @@ const Navbar = () => {
                                     onClick={() => setNavbarOpen(false)}
                                     className="inline-block px-6 py-2 bg-white hover:bg-gray-200 text-black rounded-full transition-colors duration-300 font-medium mt-2"
                                 >
-                                    Let's Talk
+                                    Let&apos;s Talk
                                 </Link>
                             </motion.div>
                         </div>

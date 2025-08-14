@@ -15,11 +15,11 @@ const EmailSection = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
-            I'm currently available for new opportunities. Whether you have a project in mind 
-            or just want to chat about technology, I'd love to hear from you.
+            I&apos;m currently available for new opportunities. Whether you have a project in mind 
+            or just want to chat about technology, I&apos;d love to hear from you.
           </p>
         </motion.div>
 

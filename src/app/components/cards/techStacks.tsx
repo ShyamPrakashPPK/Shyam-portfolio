@@ -26,9 +26,11 @@ const TechCard: FC<TechCardProps> = ({ title, tech }) => {
                         <div className="relative w-10 h-10 flex items-center justify-center">
                             {item.logo.startsWith('data:image') ? (
                                 // Handle inline SVG data
-                                <img
+                                <Image
                                     src={item.logo}
                                     alt={item.name}
+                                    width={40}
+                                    height={40}
                                     className="w-10 h-10"
                                 />
                             ) : (

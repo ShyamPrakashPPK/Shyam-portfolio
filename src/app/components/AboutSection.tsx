@@ -119,7 +119,7 @@ const AboutSection = () => {
                             transition={{ duration: 0.6, delay: 1.2 }}
                         >
                             <p className="text-lg text-gray-300 leading-relaxed">
-                                I'm a passionate full-stack developer with a strong foundation in computer science and a love for creating exceptional digital experiences.
+                                I&apos;m a passionate full-stack developer with a strong foundation in computer science and a love for creating exceptional digital experiences.
                             </p>
                             <p className="text-lg text-gray-300 leading-relaxed">
                                 With expertise in modern web technologies like React, Next.js, and Node.js, I build scalable applications that solve real-world problems and deliver outstanding user experiences.

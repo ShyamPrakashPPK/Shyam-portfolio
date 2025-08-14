@@ -8,19 +8,19 @@ const HeroSection = () => {
     return (
         <WavyBackground
             className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8"
-            containerClassName="relative min-h-screen"
+            containerClassName="relative min-h-screen w-full overflow-hidden"
             colors={[
-                "#1a1a1a", // darker gray
-                "#2a2a2a", // dark gray
-                "#3a3a3a", // medium gray
-                "#4a4a4a", // lighter gray
-                "#4D4D4D", // lightest gray
+                "#ffffff", // white
+                "#f5f5f5", // very light gray
+                "#e8e8e8", // light gray
+                "#d0d0d0", // medium gray
+                "#b8b8b8", // darker gray
             ]}
-            waveWidth={100}
+            waveWidth={60}
             backgroundFill="#000000"
-            blur={30}
+            blur={20}
             speed="slow"
-            waveOpacity={1}
+            waveOpacity={0.8}
         >
          
 
