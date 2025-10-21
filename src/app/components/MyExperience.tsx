@@ -6,14 +6,22 @@ import { motion } from 'framer-motion';
 const Experience = [
     {
         key: 1,
-        position: 'Full-stack Developer',
-        company: 'Webcastle Media',
-        location: 'Kochi, Kerala',
-        duration: 'July 2024 – Present',
-        description: `Working on our ecommerce service product used by over 10 clients with 2000+ vendors, 9000+ products, and 100k+ users. Technologies: React, Next.js, Angular, Redux, Node.js, Express.js, MongoDB.`,
+        position: 'Full-stack Engineer',
+        company: 'Zedexel',
+        location: 'Dubai, UAE',
+        duration: 'September 2025 – Present',
+        description: `Developed and maintained web applications using React, Next.js, and Node.js. Collaborated with cross-functional teams to deliver high-quality software solutions.`,
     },
     {
         key: 2,
+        position: 'Full-stack Developer',
+        company: 'Webcastle Media',
+        location: 'Kochi, Kerala',
+        duration: 'July 2024 – July 2025',
+        description: `Working on our ecommerce service product used by over 10 clients with 2000+ vendors, 9000+ products, and 100k+ users. Technologies: React, Next.js, Angular, Redux, Node.js, Express.js, MongoDB.`,
+    },
+    {
+        key: 3,
         position: 'Frontend Developer',
         company: 'TogetherEd',
         location: 'Washington DC, USA (Remote)',
@@ -21,7 +29,7 @@ const Experience = [
         description: `Worked on Growday, a SaaS platform. Contributed to React and Next.js projects using Tailwind CSS, Node.js, APIs, and Vercel.`,
     },
     {
-        key: 3,
+        key: 4,
         position: 'Full Stack Developer',
         company: 'Quazma Techno Solutions',
         location: 'Indore, MP, India (Remote)',
@@ -29,7 +37,7 @@ const Experience = [
         description: `Built modular SPAs with Angular and React. Ensured responsive UI and integrated Vercel deployment. Stack included Angular, Next.js, Tailwind CSS, Node.js.`,
     },
     {
-        key: 4,
+        key: 5,
         position: 'Full Stack Developer Intern',
         company: 'Brototype',
         location: 'Kochi, Kerala',

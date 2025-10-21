@@ -25,6 +25,15 @@ export interface WebsiteCardData {
 export const projectCard: IProjectSectionCardData[] = [
     {
         id: 1,
+        title: 'iProcure.ai',
+        techStack: 'React, Next.js, Node.js, MongoDB, Express js',
+        imageUrl: '/images/iprocure.png',
+        href: 'https://www.iprocure.ai/',
+        description: 'iProcure.ai is a procurement platform that helps businesses to find the best suppliers for their products and services.',
+        type: 'client',
+    },
+    {
+        id: 2,
         title: 'The Fresh Market (Dubai)',
         techStack: 'React, Next.js, Node.js, MongoDB, Express js',
         imageUrl: '/images/freshmarket.png',
@@ -33,7 +42,7 @@ export const projectCard: IProjectSectionCardData[] = [
         type: 'client',
     },
     {
-        id: 2,
+        id: 3,
         title: 'Dizad',
         techStack: 'Next js, React, Node.js, Express.js, MongoDB',
         imageUrl: '/images/dzd.png',
@@ -42,7 +51,7 @@ export const projectCard: IProjectSectionCardData[] = [
         type: 'client',
     },
     {
-        id: 3,
+        id: 4,
         title: 'Sidco Foods (Dubai)',
         techStack: 'React, Node.js, Express.js, MongoDB',
         imageUrl: '/images/sidcofoods.png',
@@ -51,7 +60,7 @@ export const projectCard: IProjectSectionCardData[] = [
         type: 'client',
     },
     {
-        id: 4,
+        id: 5,
         title: 'Mattressland (Dubai)',
         techStack: 'React, Node.js, Express.js, MongoDB',
         imageUrl: '/images/mattressland.png',
@@ -60,7 +69,7 @@ export const projectCard: IProjectSectionCardData[] = [
         type: 'client',
     },
     {
-        id: 5,
+        id: 6,
         title: 'AlErshad Computer Group',
         techStack: 'Next js, Express js, React, Node.js, MongoDB',
         imageUrl: '/images/alershad.png',
@@ -69,7 +78,7 @@ export const projectCard: IProjectSectionCardData[] = [
         type: 'client',
     },
     {
-        id: 6,
+        id: 7,
         title: 'MamaMe (Iraq)',
         techStack: 'Next js, React, Node.js, MongoDB',
         imageUrl: '/images/mamame.png',
@@ -78,7 +87,7 @@ export const projectCard: IProjectSectionCardData[] = [
         type: 'client',
     },
     {
-        id: 7,
+        id: 8,
         title: 'VPerfume (Dubai)',
         techStack: 'React, Node.js, Express.js, MongoDB',
         imageUrl: '/images/vperfume.png',
@@ -87,23 +96,13 @@ export const projectCard: IProjectSectionCardData[] = [
         type: 'client',
     },
     {
-        id: 8,
+        id: 9,
         title: 'Quazma Web Platform',
         techStack: 'Next.js, Tailwind CSS',
         imageUrl: '/images/quazma.png',
         href: 'https://www.quazma.com/',
         description: 'Quazma is a website for a web platform in Dubai. It is a simple website that allows the user to view the products and add them to the cart. It is a responsive website that is designed to be used on any device.',
         type: 'client',
-    },
-    {
-        id: 9,
-        title: 'Photo Storage App',
-        techStack: 'Next.js, React, Tailwind CSS, Supabase',
-        imageUrl: '/images/photoapp.png',
-        href: 'https://photo-store-nextjs-supabase-x6vj.vercel.app/',
-        githubLink: 'https://github.com/ahmed-el-hady/photo-store-nextjs-supabase',
-        description: 'Photo Storage App is a website for a photo storage app in Dubai. It is a simple website that allows the user to view the products and add them to the cart. It is a responsive website that is designed to be used on any device.',
-        type: 'personal',
     },
     {
         id: 10,
