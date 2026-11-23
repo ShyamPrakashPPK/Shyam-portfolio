@@ -10,13 +10,14 @@ import ProjectCardSection from './components/ProjectCardSection'
 import MyExperience from './components/MyExperience'
 import EmailSection from './components/EmailSection'
 import ScrollProgress from './components/ScrollProgress'
+import LoadingScreen, { LOADING_HOLD_MS } from './components/LoadingScreen'
 import { projectCard } from './components/utils/data'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 2000)
+    const timer = setTimeout(() => setIsLoading(false), LOADING_HOLD_MS)
     return () => clearTimeout(timer)
   }, [])
 
@@ -25,29 +26,13 @@ export default function Home() {
       {isLoading ? (
         <motion.div
           key="loader"
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black"
+          className="fixed inset-0 z-50 bg-black"
+          role="status"
+          aria-label="Loading"
           exit={{ opacity: 0, scale: 0.8 }}
           transition={{ duration: 0.5 }}
         >
-          <motion.div
-            className="text-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <motion.div
-              className="w-16 h-16 border-4 border-white border-t-transparent rounded-full mx-auto mb-4"
-              animate={{ rotate: 360 }}
-              transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-            />
-            <motion.h2
-              className="text-2xl font-bold gradient-text"
-              animate={{ opacity: [0.5, 1, 0.5] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
-              Loading Portfolio
-            </motion.h2>
-          </motion.div>
+          <LoadingScreen />
         </motion.div>
       ) : (
         <motion.main
