@@ -2,41 +2,9 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Experience  } from './utils/data';
 
-const Experience = [
-    {
-        key: 1,
-        position: 'Full-stack Developer',
-        company: 'Webcastle Media',
-        location: 'Kochi, Kerala',
-        duration: 'July 2024 – Present',
-        description: `Working on our ecommerce service product used by over 10 clients with 2000+ vendors, 9000+ products, and 100k+ users. Technologies: React, Next.js, Angular, Redux, Node.js, Express.js, MongoDB.`,
-    },
-    {
-        key: 2,
-        position: 'Frontend Developer',
-        company: 'TogetherEd',
-        location: 'Washington DC, USA (Remote)',
-        duration: 'February 2024 – July 2024',
-        description: `Worked on Growday, a SaaS platform. Contributed to React and Next.js projects using Tailwind CSS, Node.js, APIs, and Vercel.`,
-    },
-    {
-        key: 3,
-        position: 'Full Stack Developer',
-        company: 'Quazma Techno Solutions',
-        location: 'Indore, MP, India (Remote)',
-        duration: 'July 2023 – January 2024',
-        description: `Built modular SPAs with Angular and React. Ensured responsive UI and integrated Vercel deployment. Stack included Angular, Next.js, Tailwind CSS, Node.js.`,
-    },
-    {
-        key: 4,
-        position: 'Full Stack Developer Intern',
-        company: 'Brototype',
-        location: 'Kochi, Kerala',
-        duration: 'August 2022 – July 2023',
-        description: `Developed Angular-based SPAs using the MEAN stack. Took ownership of projects and applied responsive design principles.`,
-    }
-];
+
 
 const MyExperience = () => {
     return (
